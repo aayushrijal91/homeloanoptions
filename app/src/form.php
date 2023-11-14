@@ -18,10 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
-        $phone = $_POST['phone'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+        $loanType = $_POST['loanType'];
+        $borrowAmount = $_POST['borrowAmount'];
+        $propertyUse = $_POST['propertyUse'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -46,20 +45,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                     </head>
                 <body><table><tbody>' .
             '<tr>' .
-            '<td>Name</td>' .
-            '<td><b>' . strip_tags($name) . '</b></td>' .
+            '<td>Loan Type</td>' .
+            '<td><b>' . strip_tags($loanType) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Phone</td>' .
-            '<td><b>' . strip_tags($phone) . '</b></td>' .
+            '<td>What is the loan balance?</td>' .
+            '<td><b>' . strip_tags($borrowAmount) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Email Address</td>' .
-            '<td><b>' . strip_tags($email) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
+            '<td>How will this property be used?</td>' .
+            '<td><b>' . strip_tags($propertyUse) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 

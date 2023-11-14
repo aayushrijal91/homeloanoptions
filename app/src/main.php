@@ -40,6 +40,7 @@
 
         <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
             <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
+            
             <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
                 <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
