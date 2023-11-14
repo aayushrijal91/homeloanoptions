@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <ul class="w-fit hidden lg:flex flex-row gap-x-8">
+            <ul class="w-fit hidden xl:flex flex-row gap-x-8">
                 <li><a href="#home-loans" class="capitalize">Home Loans</a></li>
                 <li><a href="#lenders" class="capitalize">Lenders</a></li>
                 <li><a href="#why-choose-us" class="capitalize">Why Choose Us</a></li>
@@ -34,13 +34,13 @@
         </div>
     </nav>
 
-    <div class="container py-16 lg:pt-56 lg:pb-40">
+    <div class="container py-16 lg:pt-40 xl:pt-56 xl:pb-40">
         <p class="text-lg md:text-2xl font-bold leading-none">Unlock all of the best<br class="md:hidden" /> offers from 75+ lenders</p>
         <h1 class="text-5xl md:text-[65px] leading-none pt-4">Find the <b>best rates</b> for<br class="hidden md:block" /> your home loan</h1>
 
         <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
-            <div class="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-10 gap-y-10">
-                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
+            <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
+                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
                     <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
                         <div class="w-1/2">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
+                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-6">What is the Loan Balance?</p>
                     <div class="range">
                         <div class="sliderThumb"></div>
@@ -69,7 +69,7 @@
                     <p class="borrowAmount text-xl font-semibold text-primary mt-5 text-center">$<span id="borrowAmount">5000</span></p>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
+                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-4">How will this property be used?</p>
                     <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
                         <div class="w-1/2">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-[10%] md:px-2 lg:px-0">
+                <div class="w-full md:w-1/2 xl:w-[10%] md:px-2 xl:px-0">
                     <button class="bg-primary rounded-full h-[40px] text-white px-4 flex items-center justify-center font-bold md:mt-10 w-full" type="submit">Continue</button>
                 </div>
             </div>
@@ -100,7 +100,7 @@
         <p class="text-center uppercase text-gray-500 font-bold">Save Time & Money</p>
         <h3 class="text-4xl text-center font-bold text-black pt-2 pb-5">Access to 75+ all in one place!</h3>
 
-        <div class="lg:w-9/12 mx-auto">
+        <div class="xl:w-9/12 mx-auto">
             <div id="banks-slider">
                 <?php for ($i = 1; $i < 19; $i++) : ?>
                     <div><?= renderImg('bank-' . $i . '.png', 'logo') ?></div>
@@ -112,14 +112,14 @@
 
 <section class="bg-primary text-white py-16 md:py-20 lg:py-28" id="about">
     <div class="container">
-        <div class="flex flex-wrap items-center gap-y-5">
-            <div class="w-full lg:w-1/2 order-2 lg:order-1">
+        <div class="flex flex-wrap xl:items-center gap-y-5">
+            <div class="w-full lg:w-1/2 order-2 lg:order-1 lg:px-3">
                 <?= renderImg('about.jpg', 'lib', 'rounded-[40px]') ?>
             </div>
-            <div class="w-full lg:w-1/2 order-1 lg:order-2">
-                <h3 class="text-4xl md:text-[65px] font-thin leading-none">Everything about <span class="font-articulat-heavy">home loan</span> options</h3>
+            <div class="w-full lg:w-1/2 order-1 lg:order-2 lg:px-3">
+                <h3 class="text-4xl md:text-[65px] lg:text-5xl xl:text-[65px] font-thin leading-none">Everything about <span class="font-articulat-heavy">home loan</span> options</h3>
 
-                <article class="description font-light text-base md:text-xl pt-10">
+                <article class="description font-light text-base md:text-xl pt-5 md:pt-10 lg:pt-5 xl:pt-10">
                     <p class="text-2xl md:text-3xl font-bold">Reasons for a home loan.</p>
 
                     <p>A home loan isn't just about purchasing a property; it's an investment in your future. Whether you're a first-time homebuyer looking for a place to call your own or a seasoned homeowner wanting to upgrade, a home loan can make your dreams a reality.</p>
@@ -184,9 +184,9 @@
     </div>
 </section>
 
-<section class="bg-primary text-white pt-16 md:pt-20 lg:py-40 relative">
+<section class="bg-primary text-white pt-16 md:pt-20 xl:py-40 relative">
     <div class="container">
-        <article class="w-full lg:w-5/12">
+        <article class="w-full xl:w-5/12">
             <p class="text-2xl md:text-4xl font-bold">Make that dream home a reality.</p>
 
             <h3 class="text-4xl md:text-[64px] font-bold leading-none py-6">More Options. <br /> More Freedom.</h3>
@@ -199,7 +199,9 @@
         </article>
     </div>
 
-    <?= renderImg('building.png', 'lib', 'lg:absolute right-0 bottom-0') ?>
+    <div class="flex justify-end">
+        <?= renderImg('building.png', 'lib', 'xl:absolute right-0 bottom-0') ?>
+    </div>
 </section>
 
 <section id="how-it-works" class="bg-white py-16 md:py-24">
@@ -209,7 +211,7 @@
 
         <div class="flex flex-wrap gap-y-6 pt-16">
             <div class="w-full lg:w-5/12 px-3">
-                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
+            <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 1</p>
                     <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
 
@@ -223,7 +225,7 @@
             </div>
 
             <div class="w-full lg:w-7/12 px-3">
-                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
+                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 2</p>
                     <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
 
@@ -237,8 +239,8 @@
             </div>
 
             <div class="w-full px-3">
-                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
-                    <div class="w-full lg:w-5/12 lg:px-3">
+            <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
+                    <div class="w-full xl:w-5/12 lg:px-3">
                         <p class="uppercase text-gray-500 text-sm md:text-base">Step 3</p>
                         <p class="text-3xl md:text-[50px] leading-none font-bold">Choose</p>
 
@@ -248,7 +250,7 @@
                             <p>For a more personal touch our Customer Service Consultants are available to talk to you.</p>
                         </article>
                     </div>
-                    <div class="w-full lg:w-7/12 lg:px-3">
+                    <div class="w-full xl:w-7/12 lg:px-3">
                         <?= renderImg('step-3.jpg', 'lib', 'w-full') ?>
                     </div>
 
