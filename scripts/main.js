@@ -44,5 +44,18 @@ $('#banks-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 6,
     arrows: false,
+    autoplay: true,
     dots: true,
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: "80px",
+                dots: false,
+            }
+        }
+    ]
 })

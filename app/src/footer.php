@@ -1,6 +1,6 @@
 <footer class="bg-light">
 	<div class="container">
-		<div class="flex flex-wrap justify-between py-8 text-sm">
+		<div class="flex flex-wrap justify-center md:justify-between py-8 text-sm gap-y-6">
 			<p class="w-fit">Terms & Conditions <span class="px-7">|</span> Privacy Policy</p>
 
 			<p class="w-fit">© <?= $site ?> <?= date('Y') ?> | All Rights Reserved</p>
