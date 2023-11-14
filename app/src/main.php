@@ -1,12 +1,12 @@
 <article class="bg-primary">
-    <p class="text-white text-center leading-none text-xs md:text-base py-2.5">Get EXCLUSIVE Access Australia’s largest database of lenders | Get matched with the right loan instantly!</p>
+    <p class="text-white text-center leading-none text-xs lg:text-base py-2.5">Get EXCLUSIVE Access Australia’s largest database of lenders | Get matched with the right loan instantly!</p>
 </article>
 
 <header>
     <nav class="container">
         <div class="flex flex-wrap justify-center md:justify-between py-6 items-center gap-y-6">
             <div class="w-fit">
-                <a href="./" class="text-2xl flex space-x-2">
+                <a href="./" class="text-2xl flex gap-x-2">
                     <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.5373 13.4015L27.2331 11.1769V3.81293C27.2331 3.14074 26.6683 2.59563 25.9719 2.59563H22.7101C22.0136 2.59563 21.4488 3.14074 21.4488 3.81293V5.59407L16.1143 0.445954C15.4982 -0.148651 14.5004 -0.148651 13.8843 0.445954L0.462042 13.4022C-0.154014 13.9961 -0.154014 14.9599 0.462042 15.5539C0.770417 15.8508 1.17373 16 1.57704 16C1.98035 16 2.38367 15.8515 2.69135 15.5539L15 3.67448L21.4488 9.8981L26.8631 15.1238L27.308 15.5532C27.924 16.1471 28.9219 16.1478 29.538 15.5532C30.154 14.9593 30.154 13.9955 29.538 13.4015H29.5373Z" fill="#5DC1A9" />
                     </svg>
@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <ul class="w-fit hidden md:flex flex-row space-x-8">
+            <ul class="w-fit hidden lg:flex flex-row gap-x-8">
                 <li><a href="#home-loans" class="capitalize">Home Loans</a></li>
                 <li><a href="#lenders" class="capitalize">Lenders</a></li>
                 <li><a href="#why-choose-us" class="capitalize">Why Choose Us</a></li>
@@ -22,7 +22,7 @@
             </ul>
 
             <div class="w-fit">
-                <div class="flex space-x-2">
+                <div class="flex gap-x-2">
                     <div class="w-fit">
                         <a href="" class="border-2 border-primary hover:border-secondary hover:bg-secondary duration-150 text-primary hover:text-white font-bold rounded-full h-[39px] flex items-center justify-center px-4 py-2">Chat to a broker</a>
                     </div>
@@ -34,13 +34,13 @@
         </div>
     </nav>
 
-    <div class="container py-16 md:pt-56 md:pb-40">
+    <div class="container py-16 lg:pt-56 lg:pb-40">
         <p class="text-lg md:text-2xl font-bold leading-none">Unlock all of the best<br class="md:hidden" /> offers from 75+ lenders</p>
         <h1 class="text-5xl md:text-[65px] leading-none pt-4">Find the <b>best rates</b> for<br class="hidden md:block" /> your home loan</h1>
 
-        <form src="" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
-            <div class="flex flex-wrap md:flex-nowrap md:flex-row md:space-x-10 gap-y-10">
-                <div class="w-full md:w-[30%]">
+        <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
+            <div class="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-10 gap-y-10">
+                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
                     <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
                     <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
                         <div class="w-1/2">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-[30%]">
+                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
                     <p class="text-xl text-primary font-bold mb-6">What is the Loan Balance?</p>
                     <div class="range">
                         <div class="sliderThumb"></div>
@@ -69,7 +69,7 @@
                     <p class="borrowAmount text-xl font-semibold text-primary mt-5 text-center">$<span id="borrowAmount">5000</span></p>
                 </div>
 
-                <div class="w-full md:w-[30%]">
+                <div class="w-full md:w-1/2 lg:w-[30%] md:px-2 lg:px-0">
                     <p class="text-xl text-primary font-bold mb-4">How will this property be used?</p>
                     <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
                         <div class="w-1/2">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-[10%]">
+                <div class="w-full md:w-1/2 lg:w-[10%] md:px-2 lg:px-0">
                     <button class="bg-primary rounded-full h-[40px] text-white px-4 flex items-center justify-center font-bold md:mt-10 w-full" type="submit">Continue</button>
                 </div>
             </div>
@@ -110,13 +110,13 @@
     </div>
 </section>
 
-<section class="bg-primary text-white py-16 md:py-28" id="about">
+<section class="bg-primary text-white py-16 md:py-20 lg:py-28" id="about">
     <div class="container">
         <div class="flex flex-wrap items-center gap-y-5">
-            <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="w-full lg:w-1/2 order-2 lg:order-1">
                 <?= renderImg('about.jpg', 'lib', 'rounded-[40px]') ?>
             </div>
-            <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="w-full lg:w-1/2 order-1 lg:order-2">
                 <h3 class="text-4xl md:text-[65px] font-thin leading-none">Everything about <span class="font-articulat-heavy">home loan</span> options</h3>
 
                 <article class="description font-light text-base md:text-xl pt-10">
@@ -135,8 +135,8 @@
 
 <section class="bg-white py-16 md:py-28">
     <div class="container">
-        <div class="flex flex-wrap md:flex-wrap md:flex-row md:space-x-4 gap-y-5">
-            <div class="w-full md:w-1/3">
+        <div class="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-4 gap-y-5">
+            <div class="w-full lg:w-1/3">
                 <article class="shadow-3xl rounded-[40px] h-full p-10">
                     <div class="h-[56px] w-[56px] rounded-full bg-primary flex justify-center items-center">
                         <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +153,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/3">
+            <div class="w-full lg:w-1/3">
                 <article class="shadow-3xl rounded-[40px] h-full p-10">
                     <div class="h-[56px] w-[56px] rounded-full bg-primary flex justify-center items-center">
                         <?= renderImg('door.png', 'icons') ?>
@@ -165,7 +165,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-1/3">
+            <div class="w-full lg:w-1/3">
                 <article class="shadow-3xl rounded-[40px] h-full p-10">
                     <div class="h-[56px] w-[56px] rounded-full bg-primary flex justify-center items-center">
                         <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@
     </div>
 </section>
 
-<section class="bg-primary text-white pt-16 md:py-40 relative">
+<section class="bg-primary text-white pt-16 md:pt-20 lg:py-40 relative">
     <div class="container">
         <article class="w-full lg:w-5/12">
             <p class="text-2xl md:text-4xl font-bold">Make that dream home a reality.</p>
@@ -199,7 +199,7 @@
         </article>
     </div>
 
-    <?= renderImg('building.png', 'lib', 'md:absolute right-0 bottom-0') ?>
+    <?= renderImg('building.png', 'lib', 'lg:absolute right-0 bottom-0') ?>
 </section>
 
 <section id="how-it-works" class="bg-white py-16 md:py-24">
@@ -208,7 +208,7 @@
         <p class="text-base md:text-xl text-center font-semibold pt-5 md:pt-7">We make it simple for you. There are three easy steps to follow when applying.</p>
 
         <div class="flex flex-wrap gap-y-6 pt-16">
-            <div class="w-full md:w-5/12 px-3">
+            <div class="w-full lg:w-5/12 px-3">
                 <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 1</p>
                     <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
@@ -222,7 +222,7 @@
                 </article>
             </div>
 
-            <div class="w-full md:w-7/12 px-3">
+            <div class="w-full lg:w-7/12 px-3">
                 <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 2</p>
                     <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
@@ -238,7 +238,7 @@
 
             <div class="w-full px-3">
                 <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
-                    <div class="w-full md:w-5/12 md:px-3">
+                    <div class="w-full lg:w-5/12 lg:px-3">
                         <p class="uppercase text-gray-500 text-sm md:text-base">Step 3</p>
                         <p class="text-3xl md:text-[50px] leading-none font-bold">Choose</p>
 
@@ -248,7 +248,7 @@
                             <p>For a more personal touch our Customer Service Consultants are available to talk to you.</p>
                         </article>
                     </div>
-                    <div class="w-full md:w-7/12 md:px-3">
+                    <div class="w-full lg:w-7/12 lg:px-3">
                         <?= renderImg('step-3.jpg', 'lib', 'w-full') ?>
                     </div>
 
@@ -262,7 +262,7 @@
     <div class="container">
         <div class="flex flex-wrap justify-center md:justify-between py-10 md:py-16 items-center gap-y-5">
             <div class="w-fit">
-                <a href="./" class="text-2xl flex space-x-2 text-white">
+                <a href="./" class="text-2xl flex gap-x-2 text-white">
                     <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.5373 13.4015L27.2331 11.1769V3.81293C27.2331 3.14074 26.6683 2.59563 25.9719 2.59563H22.7101C22.0136 2.59563 21.4488 3.14074 21.4488 3.81293V5.59407L16.1143 0.445954C15.4982 -0.148651 14.5004 -0.148651 13.8843 0.445954L0.462042 13.4022C-0.154014 13.9961 -0.154014 14.9599 0.462042 15.5539C0.770417 15.8508 1.17373 16 1.57704 16C1.98035 16 2.38367 15.8515 2.69135 15.5539L15 3.67448L21.4488 9.8981L26.8631 15.1238L27.308 15.5532C27.924 16.1471 28.9219 16.1478 29.538 15.5532C30.154 14.9593 30.154 13.9955 29.538 13.4015H29.5373Z" fill="#5DC1A9" />
                     </svg>
@@ -271,7 +271,7 @@
             </div>
 
             <div class="w-fit">
-                <div class="flex space-x-2">
+                <div class="flex gap-x-2">
                     <div class="w-fit">
                         <a href="" class="border-2 border-white hover:border-secondary hover:bg-secondary duration-150 text-white hover:text-white font-bold rounded-full h-[39px] flex items-center justify-center px-4 py-2">Chat to a broker</a>
                     </div>
@@ -284,7 +284,7 @@
 
         <hr class="border-t-2 m-0">
 
-        <ul class="w-fit flex flex-col md:flex-row md:space-x-8 py-10 md:py-16 gap-y-4">
+        <ul class="w-fit flex flex-col md:flex-row md:gap-x-8 py-10 md:py-16 gap-y-4">
             <li><a href="#home-loans" class="capitalize text-white">Home Loans</a></li>
             <li><a href="#lenders" class="capitalize text-white">Lenders</a></li>
             <li><a href="#why-choose-us" class="capitalize text-white">Why Choose Us</a></li>

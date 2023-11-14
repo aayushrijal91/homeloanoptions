@@ -48,6 +48,13 @@ $('#banks-slider').slick({
     dots: true,
     responsive: [
         {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+            }
+        },
+        {
             breakpoint: 540,
             settings: {
                 slidesToShow: 1,

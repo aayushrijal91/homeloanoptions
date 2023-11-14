@@ -1,7 +1,7 @@
 header {
     background: imgUrl('header.jpg') center top;
     
-    @media screen and (min-width: 540px) {
+    @media screen and (min-width: 900px) {
         background-size: cover;
     }
 
