@@ -39,6 +39,7 @@
         <h1 class="text-5xl md:text-[65px] leading-none pt-4">Find the <b>best rates</b> for<br class="hidden md:block" /> your home loan</h1>
 
         <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
+            <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
             <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
                 <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
@@ -110,7 +111,7 @@
     </div>
 </section>
 
-<section class="bg-primary text-white py-16 md:py-20 lg:py-28" id="about">
+<section class="bg-primary text-white py-16 md:py-20 lg:py-28" id="home-loans">
     <div class="container">
         <div class="flex flex-wrap xl:items-center gap-y-5">
             <div class="w-full lg:w-1/2 order-2 lg:order-1 lg:px-3">
@@ -133,7 +134,7 @@
     </div>
 </section>
 
-<section class="bg-white py-16 md:py-28">
+<section class="bg-white py-16 md:py-28" id="why-choose-us">
     <div class="container">
         <div class="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-4 gap-y-5">
             <div class="w-full lg:w-1/3">
@@ -211,7 +212,7 @@
 
         <div class="flex flex-wrap gap-y-6 pt-16">
             <div class="w-full lg:w-5/12 px-3">
-            <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
+                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 1</p>
                     <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
 
@@ -239,7 +240,7 @@
             </div>
 
             <div class="w-full px-3">
-            <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
+                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col lg:flex-row justify-center items-center overflow-hidden">
                     <div class="w-full xl:w-5/12 lg:px-3">
                         <p class="uppercase text-gray-500 text-sm md:text-base">Step 3</p>
                         <p class="text-3xl md:text-[50px] leading-none font-bold">Choose</p>
