@@ -40,7 +40,7 @@
 
         <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
             <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
-            
+
             <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
                 <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
                     <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
@@ -229,11 +229,10 @@
             <div class="w-full lg:w-7/12 px-3">
                 <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col justify-center items-center overflow-hidden">
                     <p class="uppercase text-gray-500 text-sm md:text-base">Step 2</p>
-                    <p class="text-3xl md:text-[50px] leading-none font-bold">Input</p>
+                    <p class="text-3xl md:text-[50px] leading-none font-bold">Compare</p>
 
                     <p class="text-gray-700 text-sm md:text-lg py-6 grow">
-                        Input your information in our AI options tool and it will calculate and present you with the best options available!
-                        Remember, the more information you provide, the more accurate your loan options will be.
+                        Let our AI options tool do the work instantly! No waiting around! With over 75 Lenders, our AI options tool will curate and personalise the best results based on your priorities.
                     </p>
 
                     <?= renderImg('step-2.jpg', 'lib') ?>
