@@ -240,7 +240,7 @@
             </div>
 
             <div class="w-full px-3">
-                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center flex flex-col lg:flex-row justify-center items-center overflow-hidden">
+                <article class="shadow-3xl rounded-2xl md:rounded-[40px] h-full pt-8 md:pt-16 md:pb-10 px-6 md:px-16 lg:px-6 xl:px-16 text-center xl:text-start flex flex-col lg:flex-row justify-center items-center overflow-hidden">
                     <div class="w-full xl:w-5/12 lg:px-3">
                         <p class="uppercase text-gray-500 text-sm md:text-base">Step 3</p>
                         <p class="text-3xl md:text-[50px] leading-none font-bold">Choose</p>
