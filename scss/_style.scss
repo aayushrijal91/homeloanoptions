@@ -6,6 +6,23 @@ header {
     }
 
     form {
+
+        #form-tab-2 {
+            display: none;
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            box-shadow: none;
+
+            &::placeholder {
+                color: #3C6E71;
+                opacity: 0.25;
+                font-weight: 800;
+            }
+        }
+
         input[type="radio"] {
             display: none;
         }

@@ -38,59 +38,87 @@
         <p class="text-lg md:text-2xl font-bold leading-none">Unlock all of the best<br class="md:hidden" /> offers from 75+ lenders</p>
         <h1 class="text-5xl md:text-[65px] leading-none pt-4">Find the <b>best rates</b> for<br class="hidden md:block" /> your home loan</h1>
 
-        <form src="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl">
+        <form action="./src/form" method="POST" id="form" class="mt-44 md:mt-32 rounded-[40px] bg-white py-8 px-6 md:px-10 shadow-3xl min-h-[188px]">
             <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
 
-            <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
-                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
-                    <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
-                    <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
-                        <div class="w-1/2">
-                            <input type="radio" id="loanType1" name="loanType" value="Refinance" checked>
-                            <label for="loanType1" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
-                                Refinance
-                            </label>
-                        </div>
-                        <div class="w-1/2">
-                            <input type="radio" id="loanType2" name="loanType" value="New Home Loan">
-                            <label for="loanType2" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
-                                New Home Loan
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
-                    <p class="text-xl text-primary font-bold mb-6">What is the Loan Balance?</p>
-                    <div class="range">
-                        <div class="sliderThumb"></div>
-                        <div class="progressBar"></div>
-                        <input type="range" id="borrowSlider" name="borrowAmount" min="5000" max="2000000" value="5000" step="5000">
-                    </div>
-
-                    <p class="borrowAmount text-xl font-semibold text-primary mt-5 text-center">$<span id="borrowAmount">5000</span></p>
-                </div>
-
-                <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
-                    <p class="text-xl text-primary font-bold mb-4">How will this property be used?</p>
-                    <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
-                        <div class="w-1/2">
-                            <input type="radio" id="propertyUse1" name="propertyUse" value="Owner Occupier" checked>
-                            <label for="propertyUse1" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
-                                Owner Occupier
-                            </label>
-                        </div>
-                        <div class="w-1/2">
-                            <input type="radio" id="propertyUse2" name="propertyUse" value="Investment">
-                            <label for="propertyUse2" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
-                                Investment
-                            </label>
+            <div id="form-tab-1">
+                <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-4">Loan Type</p>
+                        <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
+                            <div class="w-1/2">
+                                <input type="radio" id="loanType1" name="loanType" value="Refinance" checked>
+                                <label for="loanType1" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
+                                    Refinance
+                                </label>
+                            </div>
+                            <div class="w-1/2">
+                                <input type="radio" id="loanType2" name="loanType" value="New Home Loan">
+                                <label for="loanType2" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
+                                    New Home Loan
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="w-full md:w-1/2 xl:w-[10%] md:px-2 xl:px-0">
-                    <button class="bg-primary rounded-full h-[40px] text-white px-4 flex items-center justify-center font-bold md:mt-10 w-full" type="submit">Continue</button>
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-6">What is the Loan Balance?</p>
+                        <div class="range">
+                            <div class="sliderThumb"></div>
+                            <div class="progressBar"></div>
+                            <input type="range" id="borrowSlider" name="borrowAmount" min="5000" max="2000000" value="5000" step="5000">
+                        </div>
+
+                        <p class="borrowAmount text-xl font-semibold text-primary mt-5 text-center">$<span id="borrowAmount">5000</span></p>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-4">How will this property be used?</p>
+                        <div class="bg-[#F0F0F6] h-[40px] w-full flex justify-center rounded-full p-0.5 shadow-4xl">
+                            <div class="w-1/2">
+                                <input type="radio" id="propertyUse1" name="propertyUse" value="Owner Occupier" checked>
+                                <label for="propertyUse1" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
+                                    Owner Occupier
+                                </label>
+                            </div>
+                            <div class="w-1/2">
+                                <input type="radio" id="propertyUse2" name="propertyUse" value="Investment">
+                                <label for="propertyUse2" class="flex justify-center items-center text-center leading-none h-full w-full rounded-full font-bold text-secondary">
+                                    Investment
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-[10%] md:px-2 xl:px-0">
+                        <button id="show-form-tab-2" type="button" class="bg-primary rounded-full h-[40px] text-white px-4 flex items-center justify-center font-bold md:mt-10 w-full">Continue</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form-tab-2">
+                <div class="flex flex-wrap xl:flex-nowrap xl:flex-row xl:gap-x-10 gap-y-10">
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-6">What is your name?</p>
+                        <input type="text" id="fullname" placeholder="Enter your name" name="fullname" class="text-2xl text-primary" />
+                        <small id="fullname_error" class="hidden text-sm text-red-600">Please enter full name.</small>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-6">What is your mobile number?</p>
+                        <input type="tel" id="phone_number" placeholder="Enter your mobile number" name="phone_number" class="text-2xl text-primary" />
+                        <small id="phonenumber_error" class="text-sm text-red-600">Please enter valid phone number.</small>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-[30%] md:px-2 xl:px-0">
+                        <p class="text-xl text-primary font-bold mb-6">What is your email address?</p>
+                        <input type="email" id="email" placeholder="Enter your email address" name="email" class="text-2xl text-primary" />
+                        <small id="email_error" class="text-sm text-red-600">Please enter valid email address.</small>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-[10%] md:px-2 xl:px-0">
+                        <button class="bg-primary rounded-full h-[40px] text-white px-4 flex items-center justify-center font-bold md:mt-10 w-full" type="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </form>

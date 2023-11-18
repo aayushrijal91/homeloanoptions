@@ -40,6 +40,34 @@ $('#borrowSlider').on('input', function () {
     $(this).parents('.range').find('.progressBar').css('width', (value * (98 / loanCap)) + "%");
 });
 
+$('#show-form-tab-2').on('click', function () {
+    $('#form-tab-1').hide();
+    $('#form-tab-2').fadeIn();
+});
+
+$('#form').on('submit', function (e) {
+    e.preventDefault();
+
+    let fullname = $('#fullname').val();
+    let phone_number = $('#phone_number').val();
+    let email = $('#email').val();
+    let namePattern = /^[A-Za-z]+(?:\s[A-Za-z]+)?$/;
+    let phonePattern = /^(?:\+?61|0)[2-57-8](?:\d{8}|\s\d{4}\s\d{4})$/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    let error = !namePattern.test(fullname) || !phonePattern.test(phone_number) || !emailPattern.test(email);
+
+    !namePattern.test(fullname) ? $('#fullname_error').fadeIn() : $('#fullname_error').hide();
+    !phonePattern.test(phone_number) ? $('#phonenumber_error').fadeIn() : $('#phonenumber_error').hide();
+    !emailPattern.test(email) ? $('#email_error').fadeIn() : $('#email_error').hide();
+
+    if (!error) {
+        // Use the native form submit method
+        this.submit();
+    }
+});
+
+
 $('#banks-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 6,

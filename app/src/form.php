@@ -21,6 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $loanType = $_POST['loanType'];
         $borrowAmount = $_POST['borrowAmount'];
         $propertyUse = $_POST['propertyUse'];
+        $fullname = $_POST['fullname'];
+        $phone_number = $_POST['phone_number'];
+        $email = $_POST['email'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -55,6 +58,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<tr>' .
             '<td>How will this property be used?</td>' .
             '<td><b>' . strip_tags($propertyUse) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Full Name</td>' .
+            '<td><b>' . strip_tags($fullname) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Phone number</td>' .
+            '<td><b>' . strip_tags($phone_number) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Email</td>' .
+            '<td><b>' . strip_tags($email) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 
